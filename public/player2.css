@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  font-family: 'Raleway', sans-serif;
+  margin: 30px auto 0;
+  display: block;
+  background: #050801;
+  padding: 10px 50px 10px;
+}
+
+h5 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 20px;
+  position: relative;
+  left: -130px;
+  color: #050801;
+}
+
+.col1 {
+  background-color: #F9F940;
+  border: 2px solid #050801;
+  padding: 5px;
+}
+
+.col2 {
+  background-color: #00ff00;
+  border: 2px solid #050801;
+  padding: 5px;
+}
+
+.col3 {
+  background-color: #0051ff;
+  border: 2px solid #050801;
+  padding: 5px;
+}
+
+.col4 {
+  background-color: #ff0000;
+  border: 2px solid #050801;
+  padding: 5px;
+}
+
+.h-b {
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.button {
+  width: 150px;
+  font-family: 'Anek Telugu', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  text-transform: uppercase;
+  padding-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #ffd60a;
+  background: #0077b6;
+  border: 1px solid #ffd60a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #0077b6;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  transition: 1s;
+  border: none;
+  text-transform: uppercase;
+  background: #ffd60a;
+  color: #0077b6;
+  border: 1px solid #0077b6;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+.in-center {
+  margin: 0px auto 0px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  color: #03e9f4;
+  font-family: "Arvo", cursive;
+  text-shadow: 6px 0 #372948;
+}
+
+.footer {
+  color: #eee;
+  padding-top: 10px;
+  padding-left: 38%;
+}
+
+/*Neon*/
+h1 {
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1:nth-child(1) {
+  font-family: Vampiro One;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #03e9f4,
+      0 0 70px #03e9f4, 0 0 80px #03e9f4, 0 0 100px #03e9f4, 0 0 150px #03e9f4;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #03e9f4,
+      0 0 35px #03e9f4, 0 0 40px #03e9f4, 0 0 50px #03e9f4, 0 0 75px #03e9f4;
+  }
+}
+
+label {
+  color: #000000;
+  font-size: 20px;
+}
+
+.text-cross {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* delete the data */
+.delete-req {
+  margin-left: 300px;
+  border-top: none;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KollyWood Game | Player 2</title>
+  <link rel="stylesheet" href="/player2.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+  <h1>Player 2</h1>
+
+  <h1 class="title">
+    <span>K</span>
+    <span>O</span>
+    <span>L</span>
+    <span>L</span>
+    <span>Y</span>
+    <span>W</span>
+    <span>O</span>
+    <span>O</span>
+    <span>D</span>
+  </h1>
+
+  <form action="/delete" action="GET">
+    <input class="title delete-req" type="hidden" value="Restart the Game">
+  </form>
+
+  <div class="text-center">
+    <div class="row row-cols-2">
+      <div class="col col1">
+        <h1 class="hero1stLetter"></h1>
+        <form action="" method="post" novalidate>
+          <div class="col-md-4 in-center">
+            <label for="heroValidation" class="form-label">Hero Name</label>
+            <input type="text" class="form-control" id="heroValidation" required>
+            <div class="valid-feedback">
+              <b>Correct Answer! 👍😍❤</b>
+            </div>
+            <div class="invalid-feedback">
+              <b>Wrong Answer! 🤯😌💔</b>
+            </div>
+            <button type="button" class="button" onclick="inputCheck(this)">Submit</button>
+          </div>
+        </form>
+        <h3 class="button h-b btn1" onclick="handleClick(this)">Hint</h3>
+      </div>
+      <div class="col col2">
+        <h1 class="heroine1stLetter"></h1>
+        <form action="" method="post" novalidate>
+          <div class="col-md-4 in-center">
+            <label for="heroineValidation" class="form-label">Heroine Name</label>
+            <input type="text" class="form-control" id="heroineValidation" required>
+            <div class="valid-feedback">
+              <b>Correct Answer! 👍😍❤</b>
+            </div>
+            <div class="invalid-feedback">
+              <b>Wrong Answer! 🤯😌💔</b>
+            </div>
+            <button type="button" class="button" onclick="inputCheck2(this)">Submit</button>
+          </div>
+        </form>
+        <h3 class="button h-b btn2" onclick="handleClick2(this)">Hint</h3>
+      </div>
+      <div class="col col3">
+        <h1 class="song1stLetter"></h1>
+        <form action="" method="post" novalidate>
+          <div class="col-md-4 in-center">
+            <label for="heroineValidation" class="form-label">First Word on <strong>Song</strong></label>
+            <input type="text" class="form-control" id="songValidation" required>
+            <div class="valid-feedback">
+              <b>Correct Answer! 👍😍❤</b>
+            </div>
+            <div class="invalid-feedback">
+              <b>Wrong Answer! 🤯😌💔</b>
+            </div>
+            <button type="button" class="button" onclick="inputCheck3(this)">Submit</button>
+          </div>
+        </form>
+        <h3 class="button h-b btn3" onclick="handleClick3(this)">Hint</h3>
+      </div>
+      <div class="col col4">
+        <h1 class="movie1stLetter"></h1>
+        <form action="" method="post" novalidate>
+          <div class="col-md-4 in-center">
+            <label for="heroineValidation" class="form-label">Movie Name</label>
+            <input type="text" class="form-control" id="movieValidation" required>
+            <div class="valid-feedback">
+              <b>Correct Answer! 👍😍❤</b>
+            </div>
+            <div class="invalid-feedback">
+              <b>Wrong Answer! 🤯😌💔</b>
+            </div>
+            <button type="button" class="button" onclick="inputCheck4(this)">Submit</button>
+          </div>
+        </form>
+        <h3 class="button h-b btn4" onclick="handleClick4(this)">Hint</h3>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs')%>
+  <script id="helper" data-p1hero="<%= player1Data.hero%>" data-p1heroine="<%= player1Data.heroine%>" data-p1song="<%= player1Data.song%>" data-p1movie="<%= player1Data.movie%>" data-p1herohint="<%= player1Data.heroHint%>"
+    data-p1heroinehint="<%= player1Data.heroineHint%>" data-p1songhint="<%= player1Data.songHint%>" data-p1moviehint="<%= player1Data.movieHint%>" src="/player2.js"></script>
+</body>
+
+</html>

@@ -19,15 +19,6 @@ document.querySelector('.heroine1stLetter').innerHTML = player1Heroine[0].toUppe
 document.querySelector('.song1stLetter').innerHTML = player1Song[0].toUpperCase();
 document.querySelector('.movie1stLetter').innerHTML = player1Movie[0].toUpperCase();
 
-console.log(player1Hero);
-console.log(player1Heroine);
-console.log(player1Song);
-console.log(player1Movie);
-console.log(player1HeroHint);
-console.log(player1HeroineHint);
-console.log(player1SongHint);
-console.log(player1MovieHint);
-
 // hint checking's
 var span = document.querySelectorAll('span');
 

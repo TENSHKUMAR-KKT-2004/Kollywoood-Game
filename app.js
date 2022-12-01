@@ -17,13 +17,16 @@ app.use(express.urlencoded({
   extended: true
 }))
 
+// port for deploy in heroku
+const PORT = process.env.PORT || 5000
+
 //connect mongodb connection
 const dbURI = 'mongodb+srv://kollywood-player1:player1-in-KollywoodGame@blog.dm0zbcz.mongodb.net/kollywood?retryWrites=true&w=majority'
 mongoose.connect(dbURI)
   .then((result) => {
     console.log('DB Connection Success')
     // listen for request
-    app.listen(3000)
+    app.listen(PORT)
   })
   .catch((err) => {
     console.log(err);
